@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> {{blog.title|safe}}</h1>
+<p>{{blog.content|safe}}</p>
+<small>{{blog.author}}</small>
+<br>
+<small>{{blog.date}}</small>
+{% endblock %}
